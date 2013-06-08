@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script type="text/javascript" src="resources/jquery.js"></script>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+	$("#start").click(function(){
+		$.post("chatclient.jsp",{req:$("#request").val()},function(data){
+			$("#response").val(data);
+		});
+	});
+});
+</script>
+
+ </head>
+
+ <body>
+  <input type="button" id="start" name="start" value="Start" />
+  <br>
+  <input type="text" id="request" />
+  <input type="text" id="response" />
+
+ </body>
+</html>

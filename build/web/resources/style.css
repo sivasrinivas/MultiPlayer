@@ -1,0 +1,58 @@
+/* 
+    Document   : style
+    Created on : Nov 23, 2012, 11:41:17 AM
+    Author     : Siva
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+{
+    background-color: #F2F3EF;
+    width: 100%;
+    
+    
+}
+#container
+{
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #000000;
+}
+
+div.imgdiv
+{
+/*    height: 100px;
+    width: 100px;*/
+}
+
+div.imgdiv a:hover
+{
+    border:1px solid #000000;
+}
+
+div.imgdiv img  
+{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    margin:3px;
+    border:2px solid #000000;
+}
+#tableDiv
+{
+    width: 530px;
+    height: 430px;
+}
+
+.count
+{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 2px;
+}

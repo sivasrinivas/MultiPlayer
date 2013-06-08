@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="resources/jquery.js"></script>
+<script type="text/javascript">
+//    $(document).ready(function(){
+        var imgCount=0;
+        var flips = [0,0,0,0,0,0,0,0,0,0];
+        function showImage(i){
+            if(flips[i]!=1){
+                imgCount++;
+                
+                if(i==0){
+                    if(imgCount>2){
+                        for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                        }
+                    }
+                    flips[i]=1;
+                    document.getElementById("img0").src="resources/1.jpg";
+                }
+                else if(i==1){
+                    if(imgCount>2){
+                        for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                        }
+                    }
+                    flips[i]=1;
+                    document.getElementById("img1").src="resources/1.jpg";
+                }
+                else if(i==2){
+                    if(imgCount>2){
+                        for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                        }
+                    }
+                    flips[i]=1;
+                    document.getElementById("img2").src="resources/1.jpg";
+                }
+                else if(i==3){
+                    if(imgCount>2){
+                        for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                        }
+                    }
+                   flips[i]=1;
+                   document.getElementById("img3").src="resources/1.jpg";
+                }
+                else if(i==4){
+                    if(imgCount>2){
+                        for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                        }
+                    }
+                   flips[i]=1;
+                   document.getElementById("img4").src="resources/1.jpg";
+                }
+                else if(i==5){
+                    if(imgCount>2){
+                        for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                        }
+                    }
+                   flips[i]=1;
+                   document.getElementById("img5").src="resources/1.jpg";
+                } 
+                else if(i==6){
+                    if(imgCount>2){
+                        for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                        }
+                    }
+                   flips[i]=1;
+                   document.getElementById("img6").src="resources/1.jpg";
+                }
+                else if(i==7){
+                    if(imgCount>2){
+                        for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                        }
+                    }
+                   flips[i]=1;
+                   document.getElementById("img7").src="resources/1.jpg";
+                } 
+                else if(i==8){
+                    if(imgCount>2){
+                        for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                        }
+                    }
+                   flips[i]=1;
+                   document.getElementById("img8").src="resources/1.jpg";
+                }
+                else if(i==9){
+                    if(imgCount>2){
+                        for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                        }
+                    }
+                    flips[i]=1;
+                    document.getElementById("img9").src="resources/1.jpg";
+                }
+                if(imgCount==2){
+                    var second=0, seconds=3;
+                    var imgTimer = setInterval(function(){
+                        if(second>=seconds){
+                            for(var k=0; k<10; k++){
+                            if(flips[k]==1)
+                                hideImage(k);
+                            clearInterval(imgTimer);
+                            }
+                        }
+                        second++;
+                    }, 1000);
+                }
+            }
+            
+                
+        }
+        function hideImage(j){
+            imgCount--;
+            if(j==0){
+                flips[j]=0;
+                document.getElementById("img0").src="resources/aaple.jpg";
+            }
+            else if(j==1){
+                flips[j]=0;
+                document.getElementById("img1").src="resources/dog.jpg";
+            }
+            else if(j==2){
+                flips[j]=0;
+                document.getElementById("img2").src="resources/light.jpg";
+            }
+            else if(j==3){
+                flips[j]=0;
+                document.getElementById("img3").src="resources/dog.jpg";
+            }
+            else if(j==4){
+                flips[j]=0;
+                document.getElementById("img4").src="resources/dog.jpg";
+            }
+            else if(j==5){
+                flips[j]=0;
+                document.getElementById("img5").src="resources/dog.jpg";
+            }
+            else if(j==6){
+                flips[j]=0;
+                document.getElementById("img6").src="resources/dog.jpg";
+            }
+            else if(j==7){
+                flips[j]=0;
+                document.getElementById("img7").src="resources/dog.jpg";
+            }
+            else if(j==8){
+                flips[j]=0;
+                document.getElementById("img8").src="resources/dog.jpg";
+            }
+            else if(j==9){
+                flips[j]=0;
+                document.getElementById("img9").src="resources/dog.jpg";
+            }
+        }
+//    });
+    
+</script>
+</head>
+<body>
+    <table id="table"  >
+        <tbody>
+            <tr>
+                <td>
+                    <img id="img0" src="resources/aaple.jpg" onclick="showImage(0)" style="cursor: pointer"/>
+                </td>
+                <td>
+                    <img id="img1" src="resources/dog.jpg" onclick="showImage(1)" style="cursor: pointer"/>
+                </td>
+                <td>
+                    <img id="img2" src="resources/light.jpg" onclick="showImage(2)" style="cursor: pointer"/>
+                </td>
+                <td>
+                    <img id="img3" src="resources/aaple.jpg" onclick="showImage(3)" style="cursor: pointer"/>
+                </td>
+                <td>
+                    <img id="img4" src="resources/aaple.jpg" onclick="showImage(4)" style="cursor: pointer"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="img5" src="resources/aaple.jpg" onclick="showImage(5)" style="cursor: pointer"/>
+                </td>
+                <td>
+                    <img id="img6" src="resources/dog.jpg" onclick="showImage(6)" style="cursor: pointer"/>
+                </td>
+                <td>
+                    <img id="img7" src="resources/light.jpg" onclick="showImage(7)" style="cursor: pointer"/>
+                </td>
+                <td>
+                    <img id="img8" src="resources/aaple.jpg" onclick="showImage(8)" style="cursor: pointer"/>
+                </td>
+                <td>
+                    <img id="img9" src="resources/aaple.jpg" onclick="showImage(9)" style="cursor: pointer"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

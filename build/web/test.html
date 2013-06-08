@@ -1,0 +1,74 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="resources/jquery.js"></script>
+        <script type="text/javascript">
+            window.onbeforeunload = confirmExit;
+            function confirmExit(){
+                //alert("confirm exit is being called");
+                return false;
+            }
+            $(document).ready(function(){
+                $("#table2").hide();
+                $("#button1").click(function(){
+                    $("#table1").hide();
+                    $("#table2").show();
+                });
+            });
+            
+        </script>
+    </head>
+    <body>
+        <table id="table1" name="userlogintable" border="1" cellpadding="40" rows=2 columns=6>
+            <tr>
+                <td>
+                    <div style="background-image: resources/">
+                        <img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/>
+                    </div>
+                    
+                </td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+            </tr>
+
+            <tr>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+
+            </tr>
+        </table>
+        <table id="table2" name="userlogintable" border="1" cellpadding="20" rows=2 columns=6>
+            <tr>
+                <td><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+            </tr>
+
+            <tr>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+                <td height="50" width="50"><img src="resources/card.png" width=50 height=50 alt="cannot fetch image"/></td>
+
+            </tr>
+        </table>
+
+        <input type="button" id="button1" value="button1"/><br>
+        <input type="button" id="button2" value="button2"/>
+
+    </body>
+</html>
